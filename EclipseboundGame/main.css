@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    touch-action: none;
+}
+
+#gameContainer {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#firstScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#firstScreen h2 { font-size: 2.5em; color: #4A90E2; }
+#firstScreen h3 { font-size: 1.5em; color: #FFD700; }
+#firstScreen h4 { font-size: 1.1em; line-height: 1.6; max-width: 600px; color: #DDD; }
+
+#startButton {
+    background: linear-gradient(to bottom, #4A90E2, #357ABD);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#secondScreen { width: 100%; height: 100%; }
+
+#gameUI { position: absolute; top: 10px; left: 10px; z-index: 100; }
+#status { font-size: 18px; color: #FFF; background-color: rgba(0,0,0,0.2); padding: 10px; border-radius: 5px; }
+#gameCanvas { display: block; }
+
+.popup { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); display: flex; justify-content: center; align-items: center; }
+.popup-content { background-color: #333; padding: 30px; border-radius: 10px; text-align: center; max-width: 80%; }
+.popup-content h2 { color: #FF5555; margin-top: 0; }
